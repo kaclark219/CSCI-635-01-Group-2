@@ -82,4 +82,7 @@ WARNING: This will take a WHILE! There is a lot of data, so this step could take
 mkdir -p data/raw
 kaggle datasets download -d steubk/wikiart -p data/raw --unzip
 ```
-Then unzip the folder within the data/raw folder.
+Then unzip the folder within the data/raw folder, and run the following script to split the data; this step may also take a while.
+```bash
+python code/scripts/split_data.py
+```
