@@ -1,0 +1,25 @@
+# virtual environments
+.venv/
+env/
+venv/
+
+# os files
+.DS_Store
+Thumbs.db
+
+# extra python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+
+# secrets
+.kaggle/
+kaggle.json
+.env
+
+# data (too large to track)
+data/
+!data/.gitkeep
