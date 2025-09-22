@@ -77,6 +77,7 @@ chmod 600 ~/.kaggle/kaggle.json
 ```
 
 ## Downloading the Dataset
+WARNING: This will take a WHILE! There is a lot of data, so this step could take about 30 minutes to an hour.
 ```bash
 mkdir -p data/raw
 kaggle datasets download -d steubk/wikiart -p data/raw --unzip
