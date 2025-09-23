@@ -3,5 +3,5 @@ pandas
 numpy
 Pathlib
 scikit-learn
-shutil
-random
+torch
+torchvision

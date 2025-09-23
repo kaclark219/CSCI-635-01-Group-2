@@ -5,7 +5,7 @@ import random
 
 # define path to raw data & paths to future output folders
 RAW_DIR = Path("data/raw")
-OUT_ROOT = Path("data")
+OUT_ROOT = Path("data/split")
 TRAIN_DIR = OUT_ROOT / "train"
 VAL_DIR = OUT_ROOT / "validate"
 TEST_DIR = OUT_ROOT / "test"
