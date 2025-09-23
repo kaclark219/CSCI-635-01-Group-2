@@ -80,12 +80,13 @@ chmod 600 ~/.kaggle/kaggle.json
 ```
 
 ## Downloading the Dataset
-WARNING: This will take a WHILE! There is a lot of data, so this step could take about 30 minutes to an hour.
+WARNING: This will take a WHILE! There is a lot of data (81k+ images), so this step could take about 30 minutes to an hour.
 ```bash
 mkdir -p data/raw
 kaggle datasets download -d steubk/wikiart -p data/raw --unzip
 ```
-Then unzip the folder within the data/raw folder, and run the following script to split the data; this step may also take a while.
+Then unzip the folder within the data/raw folder, and run the following scripts to prepare the image data. This step will also take about 30 minutes to an hour.
 ```bash
 python code/scripts/split_data.py
+python code/scripts/process_images.py
 ```
