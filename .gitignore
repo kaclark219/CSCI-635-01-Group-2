@@ -21,6 +21,6 @@ kaggle.json
 .env
 
 # data (too large to track)
-data/
+/data/*
 !data/.gitkeep
 !data/styles.txt
