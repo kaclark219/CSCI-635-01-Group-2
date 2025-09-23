@@ -4,8 +4,9 @@ Created for CSCI-635 (Introduction to Machine Learning) at RIT fall 2025, this p
 
 
 ## Table of Contents
-- [Project Description](#CSCI-635-01-Group-2)
+- [Project Overiew](#CSCI-635-01-Group-2)
 - [Table of Contents](#table-of-contents)
+- [Abstract](#abstract)
 - [Dev Setup](#dev-setup)
   - [System Requirements](#system-requirements)
   - [Making a Local Development Branch](#making-a-local-development-branch)
@@ -14,6 +15,8 @@ Created for CSCI-635 (Introduction to Machine Learning) at RIT fall 2025, this p
   - [Downloading the Dataset](#downloading-the-dataset)
 
 ---
+# Abstract
+Abstract will be pasted here once completed.
 
 # Dev Setup
 
