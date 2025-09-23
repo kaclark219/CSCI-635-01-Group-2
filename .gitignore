@@ -23,3 +23,4 @@ kaggle.json
 # data (too large to track)
 data/
 !data/.gitkeep
+!data/styles.txt
