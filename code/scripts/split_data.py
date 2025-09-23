@@ -11,7 +11,7 @@ VAL_DIR = OUT_ROOT / "validate"
 TEST_DIR = OUT_ROOT / "test"
 
 # split raw data into folders for training, validation, and testing .. keeping them in the correct subfolders for each class
-TRAIN_PCT, VAL_PCT, TEST_PCT = 0.70, 0.15, 0.15 # ratios for splitting data
+TRAIN_PCT, VAL_PCT, TEST_PCT = 0.6, 0.2, 0.2 # ratios for splitting data
 SEED = 635
 EXTS = (".jpg", ".jpeg", ".png") # looks like all jpgs, but just in case
 
