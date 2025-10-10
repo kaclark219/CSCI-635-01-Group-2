@@ -1,0 +1,3 @@
+timestamp,k,val_acc,test_acc,note
+2025-10-09T19:42:38,11,0.553372,0.559147,bagged_knn
+2025-10-09T19:42:38,11,0.551421,0.550927,plain_knn

@@ -3,5 +3,6 @@ pandas
 numpy
 Pathlib
 scikit-learn
-torch
-torchvision
+datetime
+scikit-image
+opencv-python

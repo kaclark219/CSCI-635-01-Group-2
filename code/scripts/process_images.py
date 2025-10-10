@@ -5,8 +5,8 @@ from PIL import Image
 SPLIT_DIR = Path("data/split")
 OUT_ROOT  = Path("data/processed")
 
-# resize images to 224x224 (standard)
-IMAGE_SIZE = (224, 224)
+# resize images to 128x128
+IMAGE_SIZE = (128, 128)
 EXTS = (".jpg", ".jpeg", ".png")
 
 # goes through all images in a directory
