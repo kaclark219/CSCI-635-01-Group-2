@@ -1,0 +1,11 @@
+iter,n_resources,mean_fit_time,std_fit_time,mean_score_time,std_score_time,param_clf,param_clf__C,param_clf__gamma,split0_test_score,split1_test_score,mean_test_score,std_test_score,rank_test_score
+0,7174,12.808176,0.29552,2.044278,0.007842,"LinearSVC(class_weight='balanced', dual=False, max_iter=8000, tol=0.001, random_state=635)",0.3,,0.165325,0.170075,0.1677,0.002375,8
+0,7174,1.604873,0.052883,2.111412,0.047419,"LinearSVC(class_weight='balanced', dual=False, max_iter=8000, tol=0.001, random_state=635)",1.0,,0.165847,0.170397,0.168122,0.002275,6
+0,7174,1.308235,0.029392,1.721313,0.007679,"LinearSVC(class_weight='balanced', dual=False, max_iter=8000, tol=0.001, random_state=635)",3.0,,0.165761,0.169973,0.167867,0.002106,7
+0,7174,2.014085,0.108857,3.105599,0.273923,"SVC(cache_size=1000, class_weight='balanced', probability=False, tol=0.01, max_iter=-1, random_state=635, kernel='rbf')",1.0,scale,0.245678,0.248705,0.247192,0.001514,4
+0,7174,1.954231,0.055773,2.959493,0.190567,"SVC(cache_size=1000, class_weight='balanced', probability=False, tol=0.01, max_iter=-1, random_state=635, kernel='rbf')",1.0,0.001,-0.012152,0.034808,0.011328,0.02348,10
+0,7174,1.81346,0.105868,2.832546,0.068091,"SVC(cache_size=1000, class_weight='balanced', probability=False, tol=0.01, max_iter=-1, random_state=635, kernel='rbf')",3.0,scale,0.265994,0.262109,0.264051,0.001942,3
+0,7174,1.97206,0.056444,2.850121,0.02548,"SVC(cache_size=1000, class_weight='balanced', probability=False, tol=0.01, max_iter=-1, random_state=635, kernel='rbf')",3.0,0.001,0.052114,0.048901,0.050508,0.001607,9
+1,21522,31.450585,0.229609,5.961926,0.498482,"LinearSVC(class_weight='balanced', dual=False, max_iter=8000, tol=0.001, random_state=635)",1.0,,0.201366,0.202835,0.202101,0.000735,5
+1,21522,13.588277,0.189343,15.757099,0.800831,"SVC(cache_size=1000, class_weight='balanced', probability=False, tol=0.01, max_iter=-1, random_state=635, kernel='rbf')",1.0,scale,0.277882,0.280522,0.279202,0.00132,2
+1,21522,10.951902,0.093519,14.149752,0.071083,"SVC(cache_size=1000, class_weight='balanced', probability=False, tol=0.01, max_iter=-1, random_state=635, kernel='rbf')",3.0,scale,0.297609,0.300979,0.299294,0.001685,1
