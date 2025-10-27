@@ -24,3 +24,6 @@ kaggle.json
 /data/*
 !data/.gitkeep
 !data/styles.txt
+
+# pipeline cache
+code/models/pipeline_cache/*
