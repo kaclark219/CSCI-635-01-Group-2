@@ -21,8 +21,9 @@ kaggle.json
 .env
 
 # data (too large to track)
-/data/*
-!data/.gitkeep
+/data/raw/*
+/data/split/*
+/data/processed/train/*
 !data/styles.txt
 
 # pipeline cache
