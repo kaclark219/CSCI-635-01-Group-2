@@ -12,7 +12,6 @@ Created for CSCI-635 (Introduction to Machine Learning) at RIT fall 2025, this p
   - [Making a Local Development Branch](#making-a-local-development-branch)
   - [Cloning the Repository](#cloning-the-repository)
   - [Installing Dependencies](#installing-dependencies)
-  - [Downloading the Dataset](#downloading-the-dataset)
 
 ---
 # Abstract
@@ -64,29 +63,4 @@ source .venv/bin/activate
 ### Python
 ```bash
 pip install -r requirements.txt
-```
-
-### Kaggle API
-#### Windows
-```bash
-New-Item -ItemType Directory -Force "$env:USERPROFILE\.kaggle" | Out-Null
-Move-Item -Path ".\kaggle.json" -Destination "$env:USERPROFILE\.kaggle\kaggle.json"
-```
-#### macOS/Linux
-```bash
-mkdir -p ~/.kaggle
-mv ./kaggle.json ~/.kaggle/kaggle.json
-chmod 600 ~/.kaggle/kaggle.json
-```
-
-## Downloading the Dataset
-WARNING: This will take a WHILE! There is a lot of data (81k+ images), so this step could take about 30 minutes to an hour.
-```bash
-mkdir -p data/raw
-kaggle datasets download -d steubk/wikiart -p data/raw --unzip
-```
-Then unzip the folder within the data/raw folder, and run the following scripts to prepare the image data. This step will also take about 30 minutes to an hour.
-```bash
-python code/scripts/split_data.py
-python code/scripts/process_images.py
 ```
