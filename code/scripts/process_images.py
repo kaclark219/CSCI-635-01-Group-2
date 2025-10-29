@@ -155,5 +155,5 @@ def balance_train_split():
             print(f"Created {needed} augmented to hit total {TARGET_PER_CLASS}")
 
 if __name__ == "__main__":
-    # resize_images()
+    resize_images()
     balance_train_split()
