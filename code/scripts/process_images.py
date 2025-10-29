@@ -6,7 +6,7 @@ SPLIT_DIR = Path("data/split")
 OUT_ROOT  = Path("data/processed")
 
 # resize images to 128x128
-IMAGE_SIZE = (128, 128)
+IMAGE_SIZE = (256, 256)
 EXTS = (".jpg", ".jpeg", ".png")
 
 # goes through all images in a directory
