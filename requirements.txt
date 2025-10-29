@@ -7,3 +7,4 @@ datetime
 scikit-image
 opencv-python
 tensorflow
+matplotlib
