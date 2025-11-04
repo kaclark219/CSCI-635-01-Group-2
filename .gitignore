@@ -2,6 +2,7 @@
 .venv/
 env/
 venv/
+myenv/
 
 # os files
 .DS_Store
