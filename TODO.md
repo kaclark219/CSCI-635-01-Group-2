@@ -8,13 +8,13 @@
 - [x] Started CNN architecture
 
 ## Next Steps (High Priority, Current Roadblock)
-- [] Finish CNN
-- [] Log CNN results
+- [ ] Finish CNN
+- [ ] Log CNN results
 
 ## Future Plans
-- [] Compare strengths/weaknesses of models using confusion matrices
-- [] Create figures to describe training vs. testing accuracy of all models (determine overfitting/underfitting)
-- [] Provide a critical analysis of the approaches used & justify which method performed best
-- [] Discuss the limitations of your work as well as potential avenues for improvement
-- [] Write abstract in README
-- [] Create presentation slides
+- [ ] Compare strengths/weaknesses of models using confusion matrices
+- [ ] Create figures to describe training vs. testing accuracy of all models (determine overfitting/underfitting)
+- [ ] Provide a critical analysis of the approaches used & justify which method performed best
+- [ ] Discuss the limitations of your work as well as potential avenues for improvement
+- [ ] Write abstract in README
+- [ ] Create presentation slides
