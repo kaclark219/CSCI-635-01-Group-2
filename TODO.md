@@ -6,15 +6,14 @@
 - [x] Implemented three baseline models (K-NN, SVM, & DT Forest)
 - [x] Logged training statistics, hyperparameter rankings, and results for baselines
 - [x] Started CNN architecture
+- [x] Finish CNN
+- [x] Log CNN results
+- [x] Compare strengths/weaknesses of models using confusion matrices
+- [x] Create figures to describe training vs. testing accuracy of all models (determine overfitting/underfitting)
 
-## Next Steps (High Priority, Current Roadblock)
-- [ ] Finish CNN
-- [ ] Log CNN results
+## In Progress
+- [ ] Create presentation slides
 
 ## Future Plans
-- [ ] Compare strengths/weaknesses of models using confusion matrices
-- [ ] Create figures to describe training vs. testing accuracy of all models (determine overfitting/underfitting)
-- [ ] Provide a critical analysis of the approaches used & justify which method performed best
 - [ ] Discuss the limitations of your work as well as potential avenues for improvement
 - [ ] Write abstract in README
-- [ ] Create presentation slides
