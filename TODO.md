@@ -10,10 +10,9 @@
 - [x] Log CNN results
 - [x] Compare strengths/weaknesses of models using confusion matrices
 - [x] Create figures to describe training vs. testing accuracy of all models (determine overfitting/underfitting)
+- [x] Create presentation slides
+- [x] Write abstract in README
 
 ## In Progress
-- [ ] Create presentation slides
 
 ## Future Plans
-- [ ] Discuss the limitations of your work as well as potential avenues for improvement
-- [ ] Write abstract in README
