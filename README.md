@@ -113,12 +113,21 @@ Each folder includes class-specific subdirectories:
 CSCI-635-01-Group-2/
 │
 ├── code/
+│   │
+│   ├── analysis/
+│   │   ├── figures/
+│   │   │   └── (summary plots)
+│   │   │
+│   │   ├── analyze_results.ipynb
+│   │   ├── confusion_matrices_summary.csv
+│   │   └── model_metrics_summary.csv
+│   │
 │   ├── models/
 │   │   ├── results/
 │   │   │   ├── cnn_fast_final.weights.h5
-│   │   │   └── (all plots + metrics)
+│   │   │   └── (plots + metrics)
 │   │   │
-│   │   ├── dataset_cnn.ipynb
+│   │   ├── cnn.ipynb
 │   │   ├── dt.ipynb
 │   │   ├── knn.ipynb
 │   │   └── svm.ipynb
