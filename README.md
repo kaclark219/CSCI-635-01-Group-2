@@ -9,9 +9,16 @@ Created for CSCI-635 (Introduction to Machine Learning) at RIT fall 2025, this p
 - [Abstract](#abstract)
 - [Dev Setup](#dev-setup)
   - [System Requirements](#system-requirements)
-  - [Making a Local Development Branch](#making-a-local-development-branch)
   - [Cloning the Repository](#cloning-the-repository)
   - [Installing Dependencies](#installing-dependencies)
+  - [Making a Local Development Branch](#making-a-local-development-branch)
+- [Dataset Overview](#dataset-overview)
+  - [Data Preparation Workflow](#data-preparation-workflow)
+  - [Final Dataset Splits](#final-dataset-splits)
+- [Project Structure Overview](#project-structure-overview)
+- [Running the Models](#running-the-models)
+  - [Running Classical Models](#running-classical-models)
+  - [Running the CNN Model](#running-the-cnn-model)
 
 ---
 # Abstract
@@ -34,16 +41,6 @@ Check installed versions:
 python --version
 pip --version
 ```
-
-## Making a Local Development Branch
-Always work on a user branch, not directly on `main`:
-```bash
-git fetch origin
-git checkout main
-git pull origin main
-git checkout -b dev-<user>
-```
-Pull requests should be submitted to `main`.
 
 ## Cloning the Repository
 ```bash
@@ -68,3 +65,116 @@ source .venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+
+## Making a Local Development Branch
+Always work on a user branch, not directly on `main`:
+```bash
+git fetch origin
+git checkout main
+git pull origin main
+git checkout -b dev-<user>
+```
+Pull requests should be submitted to `main`.
+
+# Dataset Overview
+This project uses a subset of the **WikiArt** dataset from Kaggle, consisting of five styles:
+- **Abstract Expressionism**  
+- **Baroque**  
+- **Cubism**  
+- **Impressionism**  
+- **Pop Art**
+
+## Data Preparation Workflow
+All images were processed using the pipeline in `scripts/process_images.py`, which performs:
+- Resizing to **224×224**
+- RGB normalization
+- Removal of corrupted files
+- Standardized folder structuring by class
+
+The balanced training dataset (`data/processed_balanced/train/`) was created to reduce class imbalance, and includes augmented copies of paintings from minority classes.
+
+## Final Dataset Splits
+Located under `data/processed/`:
+| Split | Description | Location |
+|-------|-------------|----------|
+| **Train (balanced)** | Used for CNN + embedding models | `data/processed_balanced/train/` |
+| **Validation** | Used for CNN tuning | `data/processed/validate/` |
+| **Test** | Final evaluation set | `data/processed/test/` |
+
+Each folder includes class-specific subdirectories:
+- Abstract_Expressionism/
+- Baroque/
+- Cubism/
+- Impressionism/
+- Pop_Art/
+
+# Project Structure Overview
+```text
+CSCI-635-01-Group-2/
+│
+├── code/
+│   ├── models/
+│   │   ├── results/
+│   │   │   ├── cnn_fast_final.weights.h5
+│   │   │   └── (all plots + metrics)
+│   │   │
+│   │   ├── dataset_cnn.ipynb
+│   │   ├── dt.ipynb
+│   │   ├── knn.ipynb
+│   │   └── svm.ipynb
+│   │
+│   ├── old-models/              # early model prototypes
+│   │
+│   ├── scripts/
+│   │   ├── process_images.py    # preprocessing pipeline
+│   │   └── split_data.py        # train/val/test splitting
+│   │
+│   └── data/
+│       ├── processed/
+│       │   ├── test/
+│       │   │   └── <class folders>
+│       │   └── validate/
+│       │       └── <class folders>
+│       │
+│       └── processed_balanced/
+│           └── train/
+│               └── <class folders>
+│
+└── README.md
+```
+
+# Running the Models
+### Create Train/Validation/Test Splits (optional if using provided processed data)
+```bash
+python code/scripts/split_data.py
+```
+### Preprocess Images (optional if using provided processed data)
+```bash
+python code/scripts/process_images.py
+```
+
+## Running Classical Models
+The classical models operate on **ResNet50 2048-dimensional embeddings**.
+Open and run any of the following Jupyter notebooks:
+- `code/models/knn.ipynb`
+- `code/models/svm.ipynb`
+- `code/models/dt.ipynb`
+
+Each notebook will:
+- Load the feature embeddings  
+- Train the model  
+- Generate metrics and plots  
+- Save results to `code/models/results/`
+
+## Running the CNN Model
+Open:
+- `code/models/cnn.ipynb`
+
+Running all cells will:
+- Load the balanced training data  
+- Build and train the CNN classifier  
+- Save outputs to `code/models/results/`, including:
+  - `cnn_fast_final.weights.h5`  
+  - `cnn_train_val_accuracy.png`  
+  - `cnn_train_val_loss.png`  
+  - `dataset_cnn_epoch_metrics.csv`
