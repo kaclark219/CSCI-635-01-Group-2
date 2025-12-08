@@ -123,22 +123,24 @@ CSCI-635-01-Group-2/
 │   │   ├── knn.ipynb
 │   │   └── svm.ipynb
 │   │
-│   ├── old-models/              # early model prototypes
+│   ├── old-models/                 # early model prototypes
 │   │
-│   ├── scripts/
-│   │   ├── process_images.py    # preprocessing pipeline
-│   │   └── split_data.py        # train/val/test splitting
+│   └── scripts/
+│       ├── process_images.py       # preprocessing pipeline
+│       └── split_data.py           # train/val/test splitting
+│ 
+├── data/
+│   ├── processed/
+│   │   ├── test/
+│   │   │   └── <class folders>
+│   │   └── validate/
+│   │       └── <class folders>
 │   │
-│   └── data/
-│       ├── processed/
-│       │   ├── test/
-│       │   │   └── <class folders>
-│       │   └── validate/
-│       │       └── <class folders>
-│       │
-│       └── processed_balanced/
-│           └── train/
-│               └── <class folders>
+│   └── processed_balanced/
+│       └── train/
+│           └── <class folders>
+│
+├── resources/
 │
 └── README.md
 ```
