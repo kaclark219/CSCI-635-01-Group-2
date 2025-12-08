@@ -98,7 +98,7 @@ Located under `data/processed/`:
 | Split | Description | Location |
 |-------|-------------|----------|
 | **Train (balanced)** | Used for CNN + embedding models | `data/processed_balanced/train/` |
-| **Validation** | Used for CNN tuning | `data/processed/validate/` |
+| **Validation** | Used for CNN tuning + hyperparameter comparisons | `data/processed/validate/` |
 | **Test** | Final evaluation set | `data/processed/test/` |
 
 Each folder includes class-specific subdirectories:
