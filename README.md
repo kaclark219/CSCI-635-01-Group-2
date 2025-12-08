@@ -86,7 +86,7 @@ This project uses a subset of the **WikiArt** dataset from Kaggle, consisting of
 
 ## Data Preparation Workflow
 All images were processed using the pipeline in `scripts/process_images.py`, which performs:
-- Resizing to **224×224**
+- Resizing to **256×256**
 - RGB normalization
 - Removal of corrupted files
 - Standardized folder structuring by class
